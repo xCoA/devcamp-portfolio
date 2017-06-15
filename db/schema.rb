@@ -17,19 +17,20 @@ ActiveRecord::Schema.define(version: 20170614163830) do
 
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
-    t.text     "body"
+    t.string   "body"
+    t.string   "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "portfolios", force: :cascade do |t|
     t.string   "title"
+    t.string   "string"
     t.string   "subtitle"
     t.text     "body"
     t.text     "main_image"
-    t.text     "thumb_image"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "skills", force: :cascade do |t|

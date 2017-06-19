@@ -7,7 +7,6 @@ end
 
 puts "10 blog posts created"
 
-puts ActiveRecord::Base.connection.data_source_exists? 'skills'
 5.times do |skill|
   Skill.create!(
       title: "Rails #{skill}",

@@ -11,9 +11,13 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615171241) do
 =======
 ActiveRecord::Schema.define(version: 20170615174936) do
+>>>>>>> resource-generator
+=======
+ActiveRecord::Schema.define(version: 20170615171241) do
 >>>>>>> resource-generator
 
   # These are extensions that must be enabled in order to support this database
@@ -28,6 +32,7 @@ ActiveRecord::Schema.define(version: 20170615174936) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   create_table "skills", force: :cascade do |t|
     t.string   "title"
     t.integer  "percent_utilized"
@@ -35,20 +40,29 @@ ActiveRecord::Schema.define(version: 20170615174936) do
     t.datetime "updated_at",       null: false
 =======
   create_table "portfolios", force: :cascade do |t|
+=======
+    create_table "portfolios", force: :cascade do |t|
+>>>>>>> resource-generator
     t.string   "title"
     t.string   "subtitle"
     t.text     "body"
     t.text     "main_image"
     t.text     "thumb_image"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
   
   create_table "skills", force: :cascade do |t|
     t.string   "title"
+<<<<<<< HEAD
     t.integer   "percent_utilized"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+>>>>>>> resource-generator
+=======
+    t.integer  "percent_utilized"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
 >>>>>>> resource-generator
   end
 

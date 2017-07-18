@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/xCoA/anthonys_view_tool
+  revision: c824965a0bbdacd70a2922b286a7e4fe5f49e192
+  specs:
+    anthonys_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -183,6 +189,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  anthonys_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)

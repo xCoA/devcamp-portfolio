@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto" rel="stylesheet">
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
 
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    
     <%= render 'shared/portfolio_nav' %>
-    
     <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
-    
+
     <%= yield %>
 
     <%= render 'shared/portfolio_footer' %>
-    
+
     <%= alerts %>
-    
-    <%= source_helper("portfolio") %>
+
+    <%= source_helper("application") %>
   </body>
 </html>

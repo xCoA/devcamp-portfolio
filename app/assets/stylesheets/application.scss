@@ -25,15 +25,28 @@ a:hover {
 /*
  * Base structure
  */
+ 
+
+
 
 html,
 body {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2, 
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6, {
+  font-family: 'Muli', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -218,4 +231,26 @@ body {
 
 .tech-news > .card {
   padding: 30px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+.app-card-container a {
+   color: blue;
+ }
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
